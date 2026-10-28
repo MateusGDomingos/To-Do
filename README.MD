@@ -56,16 +56,6 @@ Há uma classe `Tarefas` rascunhada também em `TodoapiApplication` — o modelo
 
 O `pom.xml` ainda mistura dependências dentro e fora de `<dependencies>` (web, JPA, PostgreSQL, validation, OpenAPI e Lombok precisam ficar no bloco certo para o Maven resolver).
 
-## Banco de dados
-
-`docker-compose.yml` sobe o Postgres:
-
-- usuário: `admin`
-- senha: `admin123`
-- banco: `tododb`
-- porta: `5432`
-
-A intenção em `application.yml` é JPA com `ddl-auto: update` e JDBC em `jdbc:postgresql://db:5432/tododb`. O YAML atual mistura `server` e `spring` (porta da API vs dados do banco); o app Spring, rodando na máquina, em geral usa `localhost:5432`, enquanto `db` é o hostname **dentro** da rede do Compose.
 
 ## Como subir o banco
 
