@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 package main.com.pratica.todoapi.Modelcom.pratica.todoapi.Model;
-public class Tarefa {
+public class Tarefa  {
     private int id;
     public String titulo;
     public String Descricao;

@@ -8,7 +8,7 @@ Ainda estou montando o system design e implementando. As classes já apontam o d
 
 Cada **tarefa** representa um item da lista, com:
 
-| Campo | Papel |
+| Campo | Papel |SS
 | --- | --- |
 | `id` | Identificador |
 | `titulo` | Nome curto da tarefa |
@@ -34,7 +34,7 @@ ROTA COMPLETA/
         ├── Repository/         # persistência via Spring Data JPA
         └── Config/             # OpenAPI / Swagger (esqueleto)
 ```
-
+S
 Fluxo pretendido:
 
 1. Cliente envia JSON no formato de `TarefaRequestDTO` (título, descrição, prioridade).
